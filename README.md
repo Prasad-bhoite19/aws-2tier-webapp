@@ -137,7 +137,7 @@ Follow these key steps to deploy :
 - 2️⃣ Create a MySQL Database using AWS RDS.
 - 3️⃣ Update your PHP files with the correct RDS endpoint, username, and password.
 - 4️⃣ Configure security groups:
-- 
+ 
 - EC2 inbound: Allow HTTP (80), SSH (22)
 - RDS inbound: Allow MySQL/Aurora (3306) from EC2’s security group
 

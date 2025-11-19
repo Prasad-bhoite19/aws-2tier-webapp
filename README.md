@@ -159,8 +159,6 @@ This project provides a complete, deployable 2-Tier Web App using AWS EC2 + RDS.
 ### 👤 Author :
 Prasad
 
-LinkedIn: linkedin.com/in/prasad-cloud-devops
-License: MIt
 ----
 ## 📩 Connect With Me :
 If you’d like to collaborate, discuss projects, or just say hello — feel free to reach out!  

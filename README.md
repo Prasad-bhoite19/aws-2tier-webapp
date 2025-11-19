@@ -75,50 +75,50 @@ two-tier-app/
 ### 🐧 Linux Commands Used :
 These Linux commands were commonly used while setting up and managing the EC2 instance:  
 
-Update the OS packages :
+1] Update the OS packages :
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-Install Nginx :
+2] Install Nginx :
 ```
 sudo apt install nginx -y
 ```
-Install PHP and required modules :
+3] Install PHP and required modules :
 ```
 sudo apt install php php-mysql php-cli php-fpm -y
 ```
-Start and enable Nginx :
+4] Start and enable Nginx :
 ```
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-Start and enable PHP-FPM :
+5] Start and enable PHP-FPM :
 ```
 sudo systemctl start php8.3-fpm
 sudo systemctl enable php8.3-fpm
 ```
-Navigate to web root directory :
+6] Navigate to web root directory :
 ```
 cd /var/www/html/
 ```
-Upload files to web root (example using SCP from local machine) :
+7] Upload files to web root (example using SCP from local machine) :
 ```
 scp -i your-key.pem form.html submit.php ubuntu@ec2-ip:/var/www/html/
 ```
-Set proper permissions :
+8] Set proper permissions :
 ```
 sudo chown -R www-data:www-data /var/www/html/
 sudo chmod -R 755 /var/www/html/
 ```
-Check PHP version :
+9] Check PHP version :
 ```
 php -v
 ```
-Check Nginx status :
+10] Check Nginx status :
 ```
 sudo systemctl status nginx
 ```
-Connect to MySQL RDS from EC2 :
+11] Connect to MySQL RDS from EC2 :
 ```
 mysql -h your-rds-endpoint -u your-username -p
 ```

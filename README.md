@@ -10,7 +10,7 @@
 
 ---
 
-### 🧭 Project Summary
+### 🧭 Project Summary:
 This project demonstrates a **Two-Tier Cloud Architecture** where:  
 
 * The **Web Tier** is hosted on a **Linux-based EC2 instance** running **PHP and Nginx/Apache**.  
@@ -20,12 +20,12 @@ It’s designed as a **beginner-friendly yet industry-relevant** implementation 
 
 ---
 
-### 🔄 Data Flow
+### 🔄 Data Flow:
 **User Input → PHP Script → Database Insert → Confirmation Message**  
 
 ---
 
-### 💡 Key Highlights
+### 💡 Key Highlights:
 ✅ Secure connection between EC2 and RDS  
 ✅ Real-world 2-tier design following AWS best practices  
 ✅ Minimal setup and lightweight architecture  
@@ -34,7 +34,7 @@ It’s designed as a **beginner-friendly yet industry-relevant** implementation 
 
 ---
 
-### 🧠 Learning Outcomes
+### 🧠 Learning Outcomes:
 * Learned how to deploy a web application on **AWS EC2**  
 * Understood **2-Tier Cloud Architecture**  
 * Connected **PHP application with AWS RDS (MySQL)**  
@@ -42,7 +42,7 @@ It’s designed as a **beginner-friendly yet industry-relevant** implementation 
 
 ---
 
-### 🧱 Application Overview
+### 🧱 Application Overview:
 The app allows users to submit data via an HTML form. The PHP backend processes this input and securely stores it inside an **RDS MySQL** database.  
 
 **Core Components:**  
@@ -53,7 +53,7 @@ The app allows users to submit data via an HTML form. The PHP backend processes 
 
 ---
 
-### 📁 Folder Structure
+### 📁 Folder Structure:
 ```
 two-tier-app/
 │
@@ -64,7 +64,7 @@ two-tier-app/
 ```
 ---
 
-### 🛠️ Tech Stack
+### 🛠️ Tech Stack:
 * **Frontend:** HTML  
 * **Backend:** PHP  
 * **Database:** MySQL (RDS)  
@@ -73,57 +73,57 @@ two-tier-app/
 
 ---
 
-### 🐧 Linux Commands Used
+### 🐧 Linux Commands Used:
 These Linux commands were commonly used while setting up and managing the EC2 instance:  
 
-Update the OS packages
+Update the OS packages:
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-Install Nginx
+Install Nginx:
 ```
 sudo apt install nginx -y
 ```
-Install PHP and required modules
+Install PHP and required modules:
 ```
 sudo apt install php php-mysql php-cli php-fpm -y
 ```
-Start and enable Nginx
+Start and enable Nginx:
 ```
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-Start and enable PHP-FPM
+Start and enable PHP-FPM:
 ```
 sudo systemctl start php8.3-fpm
 sudo systemctl enable php8.3-fpm
 ```
-Navigate to web root directory
+Navigate to web root directory:
 ```
 cd /var/www/html/
 ```
-Upload files to web root (example using SCP from local machine)
+Upload files to web root (example using SCP from local machine):
 ```
 scp -i your-key.pem form.html submit.php ubuntu@ec2-ip:/var/www/html/
 ```
-Set proper permissions
+Set proper permissions:
 ```
 sudo chown -R www-data:www-data /var/www/html/
 sudo chmod -R 755 /var/www/html/
 ```
-Check PHP version
+Check PHP version:
 ```
 php -v
 ```
-Check Nginx status
+Check Nginx status:
 ```
 sudo systemctl status nginx
 ```
-Connect to MySQL RDS from EC2
+Connect to MySQL RDS from EC2:
 ```
 mysql -h your-rds-endpoint -u your-username -p
 ```
-### 🖥️ Future Enhancements
+### 🖥️ Future Enhancements:
 
 Add CSS for better UI
 
@@ -135,7 +135,7 @@ Introduce a Load Balancer (ALB) for horizontal scaling
 
 Migrate to 3-Tier Architecture with a separate application layer
 
-### 🚀 Deployment Steps
+### 🚀 Deployment Steps:
 Follow these key steps to deploy:
 
 1️⃣ Launch an EC2 instance with Nginx/Apache and PHP installed.
@@ -149,19 +149,19 @@ RDS inbound: Allow MySQL/Aurora (3306) from EC2’s security group
 5️⃣ Upload your project files to /var/www/html/ on EC2.
 6️⃣ Start your web server and access your app via EC2 public IP.
 
-### 🏁 Conclusion
+### 🏁 Conclusion:
 This project provides a complete, deployable 2-Tier Web App using AWS EC2 + RDS. It’s a foundational exercise for anyone starting their Cloud, DevOps, or AWS journey, demonstrating how real-world cloud apps are structured and deployed.
 
-### 👤 Author
+### 👤 Author:
 Prasad
 
 LinkedIn: linkedin.com/in/prasad-cloud-devops
 License: MIt
 ----
-## 📩 Connect With Me
+## 📩 Connect With Me:
 If you’d like to collaborate, discuss projects, or just say hello — feel free to reach out!  
 
-### 🔗 Social & Professional Links
+### 🔗 Social & Professional Links:
 - 🌐 [Portfolio Website](https://prasad-bhoite19.github.io/prasad-portfolio/)  
 - 💼 [LinkedIn](http://linkedin.com/in/prasad-bhoite-a38a64223)  
 - 🐙 [GitHub](https://github.com/Prasad-bhoite19)  
